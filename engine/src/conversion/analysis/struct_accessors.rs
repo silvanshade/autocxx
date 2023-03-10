@@ -87,7 +87,7 @@ pub(crate) fn add_field_accessors(apis: ApiVec<PodPhase>) -> ApiVec<PodPhase> {
                                 synthesized_this_type: None,
                                 add_to_trait: None,
                                 synthetic_cpp: Some((body, CppFunctionKind::Function)),
-                                is_deleted: false,
+                                is_deleted: crate::conversion::api::DeletedOrDefaulted::Neither,
                             }),
                             analysis: (),
                         })
